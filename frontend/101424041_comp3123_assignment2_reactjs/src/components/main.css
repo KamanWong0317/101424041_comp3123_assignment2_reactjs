@@ -1,0 +1,29 @@
+html{
+    background-color:rgb(248, 248, 226);
+    margin: 10px;
+}
+
+.container {
+    height: 100%;
+    font-size: 15px;
+    text-align: center;
+    text-justify: center;
+    margin: 50px;
+}
+
+.searchbar{
+    text-align: center;
+}
+
+.list table{
+    float: left;
+    width: 100%;
+    padding: auto;
+    text-align: center;
+    border: #f5ceed;
+}
+
+form{
+    text-align: center;
+    margin: 0 20%;
+}
