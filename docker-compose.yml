@@ -1,15 +1,16 @@
 version: '3'
 services:
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - '3000:3000'
-  #   depends_on:
-  #     - backend
-  #   environment:
-  #     - REACT_APP_BACKEND_URL=http://backend:4000
+  frontend:
+    container_name: frontend
+    build:
+      context: ./frontend/101424041_comp3123_assignment2_reactjs
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://backend:4000
 
   backend:
     container_name: backend
